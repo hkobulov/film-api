@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Document</title>
+</head>
+<body>
+     <div class="container">
+         <h1 class="h1 text-center">
+             Movies
+         </h1>
+
+         <form class="form ms-auto col-8 col-sm-6 col-lg-3 d-flex mb-3">
+             <input class="film-input form-control" type="text" placeholder="Search film...">
+
+             <button class="btn">
+                 <img class="flex-shrink-1" src="./images/Minimal-Magnifying-Glass.svg" alt="Search icon" width="25" height="25">
+             </button>
+         </form>
+
+         <ul class="film-list d-flex flex-wrap justify-content-center">
+            <img class="d-block m-auto" src="./images/Pulse-1s-200px.svg" alt="" width="50" height="50">
+
+            
+         </ul>
+         <div class="film-alert alert alert-danger col-12 text-center d-none" role="alert">
+            Film of this <strong class="alert-text  text-danger"></strong> not found. Sorry Bro!
+          </div>
+     </div>
+
+     <template class="film-item-temp">
+        <li class="card m-2" style="width: 18rem;">
+            <img class="card-image card-img-top" src="" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-year"></p>
+            </div>
+          </li>
+     </template>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
