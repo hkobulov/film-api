@@ -18,8 +18,9 @@ function renderFilms(array, wrapper){
             filmClone.querySelector('.card-year').textContent = item.Year;
             
             filmItem.appendChild(filmClone);
+            filmAlert.classList.add('d-none')
         })
-
+        
         wrapper.innerHTML = null;
         wrapper.appendChild(filmItem)
     } else {
@@ -34,7 +35,7 @@ elForm.addEventListener('submit', evt => {
     evt.preventDefault()
     
     let inputValue = elFilmInput.value.trim()
-
+    
     filmAlertText.textContent = inputValue
     
     fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=452845b8&s=${inputValue}`)
